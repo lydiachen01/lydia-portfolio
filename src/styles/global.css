@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Julius';
+    src: url('fonts/JuliusSansOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+
+    font-family: Julius, sans-serif;
+}

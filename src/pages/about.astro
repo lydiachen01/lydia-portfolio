@@ -1,17 +1,22 @@
 ---
+import CheckBox from "../components/MoodChart";
+import Navbar from "../components/Navbar";
 import MainLayout from "../layouts/MainLayout.astro";
+import Footer from "../components/Footer";
 import "../styles/global.css";
 ---
 
-<MainLayout title="About">
-    <p>Tis me</p>
+<MainLayout title="About" description="PUMPKIN">
+    <Navbar />
+    <p>a cube of pastry + matcha</p>
+    <Footer />
 </MainLayout>
 
-<style>
+<!-- <style>
     p {
         color: darkblue;
         &:hover {
             color: goldenrod;
         }
     }
-</style>
+</style> -->

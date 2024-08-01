@@ -13,13 +13,14 @@ const Tabs: React.FC<TabsProps> = ({ tabName, link }) => {
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="flex items-center justify-between pr-10 py-4">
-            <a href="#" className="flex items-center">
-                <img src="src/styles/assets/logo_png (1).png" alt="Logo" className="h-16 w-36 pl-4" />
+        <nav className="flex items-center justify-between py-4 mx-[15vw]">
+            <a href="/" className="flex items-center">
+                <img src="src/styles/assets/logo_png (1).png" alt="Logo" className="h-12 w-36 pl-4" />
             </a>
             <div className="flex items-center space-x-10">
-                <Tabs tabName="PROJECTS" link="#projects" />
-                <Tabs tabName="ABOUT" link="#about" />
+                <Tabs tabName="PROJECTS" link="/projects" />
+                <Tabs tabName="ABOUT" link="/about" />
+                <Tabs tabName="BLOG" link="/blog" />
             </div>
         </nav>
     )

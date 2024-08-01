@@ -5,7 +5,14 @@
     font-style: normal;
 }
 
-* {
+@font-face {
+    font-family: 'Fragment Mono';
+    src: url('fonts/FragmentMono-Regular.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
 
-    font-family: Julius, sans-serif;
+* {
+    font-family: Fragment Mono, Julius, sans-serif;
+    font-size: 14px;
 }

@@ -2,7 +2,22 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				grass_green: '#2FBF71',
+				light_green: '#8CD867',
+				red_orange: '#FF4242',
+			},
+			animation: {
+				slide: 'slide 0.3s ease-out'
+			},
+			keyframes: {
+				slide: {
+					'0%': { transform: 'translateX(100%)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '0.5' }
+				}
+			}
+		},
 	},
 	plugins: [],
 }

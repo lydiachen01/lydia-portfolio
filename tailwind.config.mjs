@@ -9,16 +9,16 @@ export default {
 				red_orange: '#FF4242',
 			},
 			animation: {
-				slide: 'slide 0.3s ease-out',
-				scrollText: 'scrollText 10s linear infinite',
+				// slide: 'slide 0.3s ease-out',
+				'scroll-text': 'scrollText 30s linear infinite',
 			},
 			keyframes: {
-				slide: {
-					'0%': { transform: 'translateX(100%)', opacity: '0' },
-					'100%': { transform: 'translateX(0)', opacity: '0.5' }
-				},
+				// slide: {
+					// '0%': { transform: 'translateX(100%)', opacity: '0' },
+					// '100%': { transform: 'translateX(0)', opacity: '0.5' }
+				// },
 				scrollText: {
-					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(100%)' },
 					'100%': { transform: 'translateX(-100%)' },
 				},
 			}

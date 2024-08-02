@@ -26,6 +26,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="flex">
+                    <span>Copyright</span>
                     <span className="text-xl pr-1">©</span>
                     <span>Last Updated on Aug 2, 2024</span>
                 </div>

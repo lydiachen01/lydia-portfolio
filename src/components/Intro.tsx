@@ -7,11 +7,11 @@ const Intro: React.FC = () => {
                 <div className="font-bold text-3xl font-serif">A curiosity-driven developer.</div>
             </div>
             <div className="flex items-center pt-2">
-                <img src="github_black.png" className="cursor-pointer h-[2.5vh] mr-3"></img>
-                <img src="linkedin_black.png" className="h-[80%] hover:opacity-100 cursor-pointer h-[2vh]"></img>
+                <a href="https://www.linkedin.com/in/lydia-chen-tufts/" target="_blank"><img src="github_black.png" className="cursor-pointer h-[2.5vh] mr-3"></img></a>
+                <a href="https://github.com/lydiachen01" target="_blank"><img src="linkedin_black.png" className="h-[80%] hover:opacity-100 cursor-pointer h-[1.9vh]"></img></a>
             </div>
             <div className="flex pt-4">
-                <button className="py-2 px-4 border border-slate-400 mr-6 drop-shadow hover:bg-yellow-200 rounded">Contact Me</button>
+                <button className="py-2 px-4 border border-slate-400 mr-6 drop-shadow hover:bg-yellow-200 hover:border-yellow-500 rounded">Contact Me</button>
                 <button className="py-2 px-4 border border-slate-400 text-2xl bg-black hover:bg-white rounded">🎊</button>
             </div>
         </div>

@@ -8,13 +8,15 @@ import Donut3D from "../components/Donut.vue";
 import "../styles/global.css";
 import Tile from "../components/Tile";
 import Intro from "../components/Intro";
+import CautionTape from "../components/CautionTape";
 ---
 
 <MainLayout title="Portfolio" description="Homepage">
 	<Navbar />
 	<!-- <Button client:load /> -->
 	<Intro />
-	<div class="h-[100vh] bg-slate-100">
+	<CautionTape />
+	<!-- <div class="h-[100vh] bg-slate-100">
 		<div class="flex grid grid-cols-3">
 			<Tile
 				imageURL="project1.png"
@@ -35,8 +37,8 @@ import Intro from "../components/Intro";
 				client:idle
 			/>
 		</div>
-	</div>
-	<MoodTracker />
-	<Donut3D client:load />
+	</div> -->
+	<!-- <MoodTracker /> -->
+	<!-- <Donut3D client:load /> -->
 	<Footer />
 </MainLayout>

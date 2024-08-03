@@ -16,7 +16,7 @@ const List: React.FC = () => {
                     bottom-0 left-0 bg-gray-800 \
                     rounded-xl flex flex-col items-center justify-center \
                     transition-all duration-300 ease-out'
-                    style={{ width: isHovered ? '100%' : '0%' }}
+                    style={{ width: isHovered ? '100%' : '0%', opacity: isHovered ? "100%" : "0%" }}
                 >&nbsp;
             </span>
             <div className="relative flex border rounded-xl md:max-w-[35vw] \

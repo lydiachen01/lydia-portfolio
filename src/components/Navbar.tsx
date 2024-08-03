@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center space-x-10">
                 <Tabs tabName="PROJECTS" link="/projects" />
                 <Tabs tabName="ABOUT" link="/about" />
+                <a href={"https://drive.google.com/file/d/1r8GiErJp1q6CglL7hKQiWv0mYPvEg43Q/view?usp=sharing"} className="hover:underline" target="blank_">RESUME</a>
                 <Tabs tabName="BLOG" link="/blog" />
             </div>
         </nav>

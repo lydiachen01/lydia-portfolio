@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer className="align-basline bg-black p-[20%] py-20 mt-72 text-white">
-            <div className="grid grid-cols-2 md:grid-cols-1">
+            <div className="grid grid-cols-1">
                 <div className="text-3xl pb-4 font-serif">Oh! Want to stay in touch?</div>
                 {/* <div className="text-slate-800">
                     <input className="p-4 rounded-xl"></input>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="flex">
-                    <span>Copyright</span>
+                    <span className="pr-1">Copyright</span>
                     <span className="text-xl pr-1">©</span>
                     <span>Last Updated on Aug 2, 2024</span>
                 </div>

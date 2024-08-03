@@ -16,3 +16,7 @@
     font-family: Fragment Mono, Julius, sans-serif;
     font-size: 14px;
 }
+
+.gradient-list {
+    background: linear-gradient(to right, rgb(0, 0, 0, 1), rgb(0, 0, 0. 0.2) );
+}

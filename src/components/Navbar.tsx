@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                 </div>
             </nav>
             {isClicked && (
-                <div className="flex flex-col space-y-4 m-4 p-12 rounded lg:hidden bg-slate-300">
+                <div className="flex flex-col space-y-4 m-4 p-12 rounded lg:hidden bg-yellow-300">
                     <a href="/projects" className="hover:underline place-self-center">PROJECTS</a>
                     <a href="/about" className="hover:underline place-self-center ">ABOUT</a>
                     <a href={"https://drive.google.com/file/d/1r8GiErJp1q6CglL7hKQiWv0mYPvEg43Q/view?usp=sharing"} 

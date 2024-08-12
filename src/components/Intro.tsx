@@ -36,10 +36,10 @@ const Intro: React.FC = () => {
             </div>
             <div className="flex pt-4">
                 <button onClick={e => alert("hiii!")}className="py-2 px-4 border border-slate-400 mr-6 \ 
-                        drop-shadow hover:bg-yellow-200 hover:border-yellow-500 \
+                        drop-shadow hover:bg-yellow-200 hover:border-yellow-200 \
                         rounded">Contact Me</button>
                 <button className="py-2 px-4 border border-slate-400 text-2xl \
-                        bg-black hover:bg-white rounded" onClick={throwConfetti}>🎊</button>
+                        bg-black drop-shadow hover:bg-white rounded" onClick={throwConfetti}>🎊</button>
             </div>
         </div>
     )

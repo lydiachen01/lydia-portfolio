@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className="align-basline bg-black px-[10%] lg:px-[15%] py-20 text-white">
+        <footer className="align-basline bg-[#F4B942] px-[10%] lg:px-[15%] py-20">
             <div className="grid grid-cols-1">
                 <div className="text-3xl pb-4 font-serif">Want to stay in touch?</div>
                 {/* <div className="text-slate-800">

@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center space-x-10">
                     <button className="flex items-center lg:hidden block rounded p-2"
                         onClick={handleClick}>
-                        <img src="menu.png" alt="Logo" className="h-6" />
+                        <img src="menu.png" alt="Logo" className="h-7" />
                     </button>
                     <Tabs tabName="PROJECTS" link="/projects" />
                     <Tabs tabName="ABOUT" link="/about" />

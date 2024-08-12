@@ -28,7 +28,7 @@ const Intro: React.FC = () => {
             <div>Hi!</div>
             <div>
                 <div className="font-bold text-3xl font-serif">I'm Lydia Chen.</div>
-                <div className="font-bold text-3xl font-serif">A curiosity-driven developer.</div>
+                <div className="text-xl font-serif">CS @ Tufts</div>
             </div>
             <div className="flex items-center pt-2">
                 <a href="https://github.com/lydiachen01" target="_blank"><img src="github_black.png" className="cursor-pointer h-[35px] mr-3"></img></a>

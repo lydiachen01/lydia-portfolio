@@ -10,25 +10,53 @@ import Tile from "../components/Tile";
 import Intro from "../components/Intro";
 import CautionTape from "../components/CautionTape";
 import Donut from "../components/Donut.vue";
-import List from "../components/ListItem";
+import List from "../components/ProjectList";
 ---
 
 <MainLayout title="Portfolio" description="Homepage">
   <Navbar />
   <!-- <Button client:load /> -->
-
-  <div class="grid grid-cols-1 md:grid-cols-2">
+  <CautionTape />
+  <div class="grid grid-cols-1 md:grid-cols-2 m-[8%]">
     <Intro client:idle />
-    <div class="md:pl-0 pb-24 place-content-center">
-      <div class="px-2 pb-5 text-lg underline decoration-wavy">Projects:</div>
-      <List client:idle />
-      <List client:idle />
-      <List client:idle />
-      <List client:idle />
-      <List client:idle />
+    <div class="md:pl-0">
+      <div
+        class="px-2 pb-4 text-2xl font-bold underline decoration-wavy font-serif"
+      >
+        Projects:
+      </div>
+      <List
+        title="b#"
+        description="a cozy game for learning music theory"
+        year={"IP"}
+        client:idle
+      />
+      <List
+        title="m.graph"
+        description="a visualization tool to track your courses"
+        year={"IP"}
+        client:idle
+      />
+      <List
+        title="print.spot"
+        description="webapp for all campus printer info"
+        year={"IP"}
+        client:idle
+      />
+      <List
+        title="myvoterinfo"
+        description="app showing up-to-date personalized voting info"
+        year={2024}
+        client:idle
+      />
+      <List
+        title="teatopia"
+        description="e-commerce website for tea lovers"
+        year={2023}
+        client:idle
+      />
     </div>
   </div>
-  <CautionTape />
   <!-- <div class="h-[100vh] bg-slate-100">
 		<div class="flex grid grid-cols-3">
 			<Tile

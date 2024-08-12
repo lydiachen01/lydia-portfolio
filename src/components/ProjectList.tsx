@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 
-const List: React.FC = () => {
+interface Project {
+    title: string;
+    description: string;
+    year: number | string;
+}
+
+const List: React.FC<Project> = ({title, description, year}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleHoverEnter = () => setIsHovered(true);
@@ -12,21 +18,21 @@ const List: React.FC = () => {
         onMouseLeave={handleHoverLeave}>
             <span
                     // Adding hover: p-4 looks cool
-                    className='absolute py-4 md:max-w-[35vw] max-w-[75vw] border \
-                    bottom-0 left-0 bg-gray-800 \
+                    className='absolute py-4 md:max-w-[35vw] max-w-[90vw] border \
+                    bottom-0 left-0 bg-gradient-to-r from-teal-400 to-blue-500 \
                     rounded-xl flex flex-col items-center justify-center \
-                    transition-all duration-300 ease-out'
+                    transition-all duration-500 ease-out'
                     style={{ width: isHovered ? '100%' : '0%', opacity: isHovered ? "100%" : "0%" }}
                 >&nbsp;
             </span>
             <div className="relative flex border rounded-xl md:max-w-[35vw] \
-            max-w-[75vw] p-4 px-6 mb-4 place-content-between \
+            max-w-[90vw] p-4 px-6 mb-4 \
             cursor-pointer hover:text-white">
-                <label className="cursor-pointer ">Title</label>
-                <label className="cursor-pointer">Description</label>
-                <label className="cursor-pointer text-gray-400">20XX</label>
+                <label className="cursor-pointer w-[15vw] mr-8">{title}</label>
+                <label className="cursor-pointer w-[60vw] mr-8">{description}</label>
+                <label className="cursor-pointer opacity-50 mr-4">{year}</label>
                 <span className='relative rounded-3xl bg-blue-400' 
-                style={{ width: '16%' }} >&nbsp;</span>
+                style={{ width: '2%' }} >&nbsp;</span>
             </div>
         </div>
     )

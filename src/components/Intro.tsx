@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
     }
 
     return (
-        <div className="p-[15vw] space-y-1">
+        <div className="p-[10vw] space-y-1">
             <div>Hi!</div>
             <div>
                 <div className="font-bold text-3xl font-serif">I'm Lydia Chen.</div>
@@ -35,7 +35,7 @@ const Intro: React.FC = () => {
                 <a href="https://www.linkedin.com/in/lydia-chen-tufts/" target="_blank"><img src="linkedin_black.png" className="hover:opacity-100 cursor-pointer h-[30px]"></img></a>
             </div>
             <div className="flex pt-4">
-                <button className="py-2 px-4 border border-slate-400 mr-6 \ 
+                <button onClick={e => alert("hiii!")}className="py-2 px-4 border border-slate-400 mr-6 \ 
                         drop-shadow hover:bg-yellow-200 hover:border-yellow-500 \
                         rounded">Contact Me</button>
                 <button className="py-2 px-4 border border-slate-400 text-2xl \

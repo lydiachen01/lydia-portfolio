@@ -14,7 +14,7 @@ import List from "../components/ProjectList";
 ---
 
 <MainLayout title="Portfolio" description="Homepage">
-  <Navbar />
+  <Navbar client:idle/>
   <!-- <Button client:load /> -->
   <CautionTape />
   <div class="grid grid-cols-1 lg:grid-cols-2 m-[8%]">
@@ -26,13 +26,13 @@ import List from "../components/ProjectList";
       </div>
       <List
         title="b#"
-        description="a cozy game for learning music theory"
+        description="cozy game for learning music theory"
         year={"IP"}
         client:idle
       />
       <List
         title="m.graph"
-        description="a visualization tool to track your courses"
+        description="visualization tool to track your courses"
         year={"IP"}
         client:idle
       />

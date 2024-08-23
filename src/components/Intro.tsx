@@ -35,7 +35,7 @@ const Intro: React.FC = () => {
                 <a href="https://www.linkedin.com/in/lydia-chen-tufts/" target="_blank"><img src="linkedin_black.png" className="hover:opacity-100 cursor-pointer h-[30px]"></img></a>
             </div>
             <div className="flex pt-4">
-                <button onClick={e => alert("hiii!")}className="py-2 px-4 border border-slate-400 mr-6 \ 
+                <button onClick={() => window.open("https://calendly.com/lydia-chen-tufts")}className="py-2 px-4 border border-slate-400 mr-6 \ 
                         drop-shadow hover:bg-yellow-200 hover:border-yellow-200 \
                         rounded">Contact Me</button>
                 <button className="py-2 px-4 border border-slate-400 text-2xl \

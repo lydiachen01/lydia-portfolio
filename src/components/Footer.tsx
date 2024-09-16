@@ -26,7 +26,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div>Built with Astro.</div>
-                <div>Last Updated on Aug 11, 2024</div>
+                <div>Last Updated on Sept. 16, 2024</div>
             </div>
         </footer>
     );

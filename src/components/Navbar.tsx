@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface TabsProps {
     tabName: string;
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         <>
             <nav className="flex items-center justify-between py-4 lg:pl-10 mx-[15vw]">
                 <a href="/" className="flex items-center">
-                    <img src="logo_2.png" alt="Logo" className="h-[7vh] pl-4" />
+                    <img src="logo_2.png" alt="Logo" className="h-[4rem] pl-4" />
                 </a>
                 <div className="flex items-center space-x-10">
                     <button className="flex items-center lg:hidden block rounded p-2"
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
                     </button>
                     <Tabs tabName="PROJECTS" link="/projects" />
                     <Tabs tabName="ABOUT" link="/about" />
-                    <a href={"https://drive.google.com/file/d/1bp646m8U_tGIz-emL_8NbM8lJP-cfk26/view?usp=sharing"} 
+                    <a href={"https://drive.google.com/file/d/1dIA71LraFOGwj8UB6e03Kj4fHoWn_sjr/view?usp=sharing"} 
                     className="hover:underline hidden lg:block" target="blank_">RESUME</a>
                     <Tabs tabName="BLOG" link="/blog" />
                 </div>
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 <div className="flex flex-col space-y-4 m-4 p-12 rounded lg:hidden bg-yellow-400">
                     <a href="/projects" className="hover:underline place-self-center">PROJECTS</a>
                     <a href="/about" className="hover:underline place-self-center ">ABOUT</a>
-                    <a href={"https://drive.google.com/file/d/1bp646m8U_tGIz-emL_8NbM8lJP-cfk26/view?usp=sharing"} 
+                    <a href={"https://drive.google.com/file/d/1dIA71LraFOGwj8UB6e03Kj4fHoWn_sjr/view?usp=sharing"} 
                     className="hover:underline place-self-center " target="blank_">RESUME</a>
                     <a href="/blog" className="hover:underline place-self-center ">BLOG</a>
                 </div>

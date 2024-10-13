@@ -8,6 +8,7 @@ import CautionTape from "../components/CautionTape";
 import List from "../components/ProjectList";
 ---
 
+
 <MainLayout title="Portfolio" description="Homepage">
   <Navbar client:idle/>
   <!-- <Button client:load /> -->
@@ -22,31 +23,36 @@ import List from "../components/ProjectList";
       <List
         title="b#"
         description="cozy game for learning music theory"
-        year={"IP"}
+        year="IP"
+        route="\projects"
         client:idle
       />
       <List
         title="m.graph"
         description="visualization tool to track your courses"
-        year={"IP"}
+        year="IP"
+        route="\projects"
         client:idle
       />
       <List
         title="print.spot"
-        description="webapp for all campus printer info"
-        year={"IP"}
+        description="webapp for finding campus printers"
+        year="IP"
+        route="\projects"
         client:idle
       />
       <List
         title="myvoterinfo"
         description="app showing up-to-date personalized voting info"
         year={2024}
+        route="\projects"
         client:idle
       />
       <List
         title="teatopia"
         description="e-commerce website for tea lovers"
         year={2023}
+        route="\projects"
         client:idle
       />
     </div>
@@ -75,5 +81,5 @@ import List from "../components/ProjectList";
 	</div> -->
   <!-- <MoodTracker /> -->
   <!-- <Donut3D client:load /> -->
-  <Footer />
+  <Footer client:visible/>
 </MainLayout>

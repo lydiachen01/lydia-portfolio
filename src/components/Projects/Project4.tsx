@@ -1,7 +1,16 @@
 const Project4 = () => {
     return(
         <>
-            <h1 className="text-3xl font-bold">Project 4</h1>
+            <h1 className="text-3xl font-bold">myvoterinfo
+                <a 
+                    href="https://devpost.com/software/myvoterinfo" 
+                    className="external-link-symbol ml-2 text-3xl text-blue-600 hover:text-lime-500" 
+                    target="_blank" 
+                    rel="noopener noreferrer external"
+                >
+                    🔗
+                </a>
+            </h1>
             <h2 className="text-xl font-bold underline pt-4 pb-2">Overview</h2>
             <p className="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Earum nesciunt ex nostrum ratione sapiente repellendus 

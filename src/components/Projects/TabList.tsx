@@ -5,13 +5,7 @@ import Project3 from "./Project3";
 import Project4 from "./Project4";
 import Project5 from "./Project5";
 
-// Define a type for the tab item, which will include title and content
-interface TabItem {
-    title: string;
-    contentID: number;
-}
-
-const tabs: TabItem[] = [
+const tabs = [
     { title: "b#", contentID: 1 },
     { title: "m.graph", contentID: 2 },
     { title: "print.spot", contentID: 3 },

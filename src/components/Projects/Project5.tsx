@@ -1,7 +1,7 @@
 const Project5 = () => {
     return(
         <>
-            <h1 className="text-3xl font-bold">Project 5</h1>
+            <h1 className="text-3xl font-bold">teatopia</h1>
             <h2 className="text-xl font-bold underline pt-4 pb-2">Overview</h2>
             <p className="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Earum nesciunt ex nostrum ratione sapiente repellendus 

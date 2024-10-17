@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 <div className="flex flex-col space-y-4 m-4 p-12 rounded lg:hidden bg-yellow-400">
                     <a href="/projects" className="hover:underline place-self-center">PROJECTS</a>
                     <a href="/about" className="hover:underline place-self-center ">ABOUT</a>
-                    <a href={"https://drive.google.com/file/d/1dIA71LraFOGwj8UB6e03Kj4fHoWn_sjr/view?usp=sharing"} 
+                    <a href={"https://drive.google.com/file/d/1KtOP9CguvUzaAQaTYj2saHTOwv0Ewroq/view?usp=sharing"} 
                     className="hover:underline place-self-center " target="blank_">RESUME</a>
                     <a href="/blog" className="hover:underline place-self-center ">BLOG</a>
                 </div>

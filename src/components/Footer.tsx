@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className="flex pt-1">
                     <img src="ricebowl.png" className="h-6"></img>
-                    <span className="ml-2">fueled by avocado toasts + matcha</span>
+                    <span className="ml-2">fueled by avocado toasts + chai lattes</span>
                 </div>
                 <ul>
                     <li className="flex py-4">

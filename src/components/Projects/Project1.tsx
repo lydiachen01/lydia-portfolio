@@ -2,7 +2,8 @@ const Project1 = () => {
     return(
         <>
             <h1 className="text-3xl font-bold">b#</h1>
-            <h2 className="text-xl font-bold underline pt-4 pb-2">Overview</h2>
+            <p className="pt-4">Under construction 🚧</p>
+            {/* <h2 className="text-xl font-bold underline pt-4 pb-2">Overview</h2>
             <p className="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Earum nesciunt ex nostrum ratione sapiente repellendus 
                 minima fuga aperiam tempore rerum! Quas magni accusamus 
@@ -31,7 +32,7 @@ const Project1 = () => {
                 Earum nesciunt ex nostrum ratione sapiente repellendus 
                 minima fuga aperiam tempore rerum! Quas magni accusamus 
                 voluptates beatae quia deserunt architecto ratione aperiam!
-            </p>
+            </p> */}
         </>
     )
 }

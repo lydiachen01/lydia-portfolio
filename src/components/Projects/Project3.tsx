@@ -14,6 +14,8 @@ const Project3 = () => {
                     🔗
                 </a>
             </h1>
+            <p className="pt-4">Under construction 🚧</p>
+{/* 
             <h2 className="text-xl font-bold underline pt-4 pb-2">Overview</h2>
             <p className="pb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -48,7 +50,7 @@ const Project3 = () => {
                 Earum nesciunt ex nostrum ratione sapiente repellendus 
                 minima fuga aperiam tempore rerum! Quas magni accusamus 
                 voluptates beatae quia deserunt architecto ratione aperiam!
-            </p>
+            </p> */}
         </>
     );
 };

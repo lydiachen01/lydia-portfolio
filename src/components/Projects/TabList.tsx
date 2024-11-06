@@ -6,9 +6,9 @@ import Project4 from "./Project4";
 import Project5 from "./Project5";
 
 const tabs = [
-    { title: "b#", contentID: 1 },
-    { title: "m.graph", contentID: 2 },
-    { title: "print.spot", contentID: 3 },
+    { title: "b# [WIP]", contentID: 1 },
+    { title: "m.graph [WIP]", contentID: 2 },
+    { title: "print.spot [WIP]", contentID: 3 },
     { title: "myvoterinfo", contentID: 4 },
     { title: "teatopia", contentID: 5 }
 ];
@@ -25,6 +25,7 @@ const TabList: React.FC = () => {
     const [selectedTab, setSelectedTab] = useState<number>(1);
 
     const handleTabClick = (content: number) => {
+        console.log("A tab was clicked")
         setSelectedTab(content);
     };
 

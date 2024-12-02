@@ -11,7 +11,7 @@ const BentoLayout: React.FC = () => {
                     <div className="flex-auto border h-96 rounded-lg">b</div>
                 </div>
 
-                <div className="flex pt-12">
+                {/* <div className="flex pt-12">
                     <div className="flex-auto  border h-60 rounded-lg mr-6">c</div>
                     <div className="flex-auto w-[60%] border h-60 rounded-lg">
                         <List
@@ -51,7 +51,7 @@ const BentoLayout: React.FC = () => {
                         />
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

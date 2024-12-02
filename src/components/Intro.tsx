@@ -1,4 +1,5 @@
 import confetti from 'canvas-confetti'
+import type React from 'react';
 
 const Intro: React.FC = () => {
 

@@ -13,8 +13,8 @@ const Tabs: React.FC<TabsProps> = ({ tabName, link }) => {
 
 const Navbar: React.FC = () => {
     const [isClicked, setClicked] = useState(false);
-
-    const handleClick = () => {setClicked(!isClicked)}
+    const resumeLink = "https://drive.google.com/file/d/1bA7sGtLzLPg3tNwe4gpFBi4Cpz7uj4Mp/view?usp=sharing"
+    const handleClick = () => { setClicked(!isClicked) }
 
     return (
         <>
@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
                     </button>
                     <Tabs tabName="PROJECTS" link="/projects" />
                     <Tabs tabName="ABOUT" link="/about" />
-                    <a href={"https://drive.google.com/file/d/1dIA71LraFOGwj8UB6e03Kj4fHoWn_sjr/view?usp=sharing"} 
-                    className="hover:underline hidden lg:block" target="blank_">RESUME</a>
+                    <a href={resumeLink}
+                        className="hover:underline hidden lg:block" target="blank_">RESUME</a>
                     <Tabs tabName="BLOG" link="/blog" />
                 </div>
             </nav>
@@ -38,8 +38,8 @@ const Navbar: React.FC = () => {
                 <div className="flex flex-col space-y-4 m-4 p-12 rounded lg:hidden bg-yellow-400">
                     <a href="/projects" className="hover:underline place-self-center">PROJECTS</a>
                     <a href="/about" className="hover:underline place-self-center ">ABOUT</a>
-                    <a href={"https://drive.google.com/file/d/1KtOP9CguvUzaAQaTYj2saHTOwv0Ewroq/view?usp=sharing"} 
-                    className="hover:underline place-self-center " target="blank_">RESUME</a>
+                    <a href={resumeLink}
+                        className="hover:underline place-self-center " target="blank_">RESUME</a>
                     <a href="/blog" className="hover:underline place-self-center ">BLOG</a>
                 </div>
             )}

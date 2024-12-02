@@ -6,18 +6,21 @@ import "../styles/global.css";
 import Intro from "../components/Intro";
 import CautionTape from "../components/CautionTape";
 import List from "../components/ProjectList";
+import BentoLayout from "../components/Projects/BentoLayout";
 ---
 
-
 <MainLayout title="Portfolio" description="Homepage">
-  <Navbar client:idle/>
+  <Navbar client:idle />
   <!-- <Button client:load /> -->
   <CautionTape />
+  <!-- <BentoLayout /> -->
   <div class="grid grid-cols-1 lg:grid-cols-2 m-[8%]">
     <Intro client:idle />
     <div class="md:pl-0 place-content-center py-20">
-      <div class="mb-4 ml-1 text-2xl font-bold underline decoration-wavy\
-	  			 font-serif text-center lg:text-left">
+      <div
+        class="mb-4 ml-1 text-2xl font-bold underline decoration-wavy\
+	  			 font-serif text-center lg:text-left"
+      >
         Projects:
       </div>
       <List
@@ -81,5 +84,5 @@ import List from "../components/ProjectList";
 	</div> -->
   <!-- <MoodTracker /> -->
   <!-- <Donut3D client:load /> -->
-  <Footer client:visible/>
+  <Footer client:visible />
 </MainLayout>

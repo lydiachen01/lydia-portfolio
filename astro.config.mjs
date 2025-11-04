@@ -9,5 +9,8 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [react(), tailwind(), vue()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel(),
+  redirects: {
+    '/': '/projects'
+    },
 });

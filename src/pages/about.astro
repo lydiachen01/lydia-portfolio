@@ -5,12 +5,18 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Footer from "../components/Footer";
 import CautionTape from "../components/CautionTape";
 import "../styles/global.css";
+import ClickReaction from "../components/ClickReaction";
 ---
 
 <MainLayout title="About" description="PUMPKIN">
-  <Navbar client:idle />
-  <CautionTape />
-  <p class="flex h-[100vh] items-center justify-center">
+  <ClickReaction client:load />
+  <div
+    class="fixed top-0 left-0 right-0 w-full z-2 var(--beige) rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100"
+  >
+    <Navbar client:idle />
+    <CautionTape />
+  </div>
+  <p class="flex h-screen w-full items-center justify-center px-4">
     Under construction 🚧
   </p>
   <Footer client:visible />

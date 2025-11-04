@@ -1,21 +1,26 @@
 ---
 import CautionTape from "../components/CautionTape";
+import ClickReaction from "../components/ClickReaction";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import StarSequence from "../components/StarSequence";
 import TabList from "../components/Projects/TabList";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
 ---
 
 <MainLayout title="Projects" description="PUMPKINv2">
-  <Navbar client:idle/>
-  <CautionTape />
-  <TabList client:idle/>
-  <!-- <p class="flex h-[100vh] items-center justify-center">Project Page</p> -->
-  <!-- <Tile 
-        imageURL="project1.png"
-        title="Bee Sharp"
-        subject="UX Design"
-        client:idle></Tile> -->
-  <Footer client:visible/>
+  <ClickReaction client:load />
+  <div
+    class="fixed top-0 left-0 right-0 w-full z-50 var(--beige) rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100"
+  >
+    <Navbar client:idle />
+    <CautionTape />
+  </div>
+  <div class="mb-24">a</div>
+  <!-- <p class="pt-12">
+    <StarSequence starWidth={12} starHeight={12} client:load />
+  </p> -->
+  <TabList client:idle />
+  <Footer client:visible />
 </MainLayout>

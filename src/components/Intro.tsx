@@ -66,7 +66,7 @@ const Intro: React.FC = () => {
 
     return (
         <div className="p-[10vw] space-y-1">
-            <div>Hi!</div>
+            <img src="intro2.png"/>
             <div>
                 <div className="font-bold text-3xl font-serif">I'm Lydia Chen.</div>
                 <div className="text-xl font-serif">CS @Tufts</div>

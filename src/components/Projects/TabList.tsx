@@ -1,24 +1,21 @@
 import React, { useState } from "react";
-import Project1 from "./Project1";
-import Project2 from "./Project2";
-import Project3 from "./Project3";
-import Project4 from "./Project4";
-import Project5 from "./Project5";
+import MyVoterInfo from "./MyVoterInfo";
+import GooseGoose from "./GooseGoose";
+import Freebites from "./Freebites";
+import AKA from "./AKA";
 
 const tabs = [
-    { title: "b# [WIP]", contentID: 1 },
-    { title: "m.graph [WIP]", contentID: 2 },
-    { title: "print.spot [WIP]", contentID: 3 },
-    { title: "myvoterinfo", contentID: 4 },
-    { title: "teatopia", contentID: 5 }
+    { title: "myvoterinfo [2023]", contentID: 1 },
+    { title: "goosegoose [2025]", contentID: 2 },
+    { title: "freebites [2025 - PRESENT]", contentID: 3 },
+    { title: "aka. [WIP]", contentID: 4 },
 ];
 
 const mapping: { [key: number]: React.ReactNode } = {
-    1: <Project1 />,
-    2: <Project2 />,
-    3: <Project3 />,
-    4: <Project4 />,
-    5: <Project5 />
+    1: <MyVoterInfo />,
+    2: <GooseGoose />,
+    3: <Freebites />,
+    4: <AKA />
 };
 
 const TabList: React.FC = () => {
@@ -30,9 +27,9 @@ const TabList: React.FC = () => {
     };
 
     return (
-        <div className="mx-auto max-w-[60rem] my-[4rem] overflow-hidden">
+        <div className="mx-auto max-w-[60rem] py-[4rem] overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <ul className="md:col-span-1 md:border-r border-gray-300">
+                <ul className="md:col-span-1 md:border-r border-slate-600 text-gray-700">
                     {tabs.map((tab) => (
                         <li
                             key={tab.title}
@@ -40,8 +37,8 @@ const TabList: React.FC = () => {
                             className={`cursor-pointer px-4 py-2 \
                                 ${selectedTab === tab.contentID ? "font-bold" : "font-normal"} \
                                 ${selectedTab === tab.contentID ? "border-b-2 border-slate-600" : "border-b-2"} \
-                                ${selectedTab === tab.contentID ? "text-gray-700" : "text-gray-300"} \
-                                hover:bg-gray-100 hover:underline`}
+                                ${selectedTab === tab.contentID ? "opacity-100" : "opacity-50"} \
+                                hover:underline`}
                         >
                             {tab.title}
                         </li>

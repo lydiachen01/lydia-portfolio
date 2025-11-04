@@ -1,0 +1,22 @@
+---
+import CautionTape from "../components/CautionTape";
+import ClickReaction from "../components/ClickReaction";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Timeline" description="PUMPKINv3">
+  <ClickReaction client:load />
+  <div
+    class="fixed top-0 left-0 right-0 w-full z-5 var(--beige) rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100"
+  >
+    <Navbar client:idle />
+    <CautionTape />
+  </div>
+  <p class="flex h-[200px] items-center justify-center">
+    Under construction 🚧
+  </p>
+  <Footer client:visible />
+</MainLayout>

@@ -6,83 +6,25 @@ import "../styles/global.css";
 import Intro from "../components/Intro";
 import CautionTape from "../components/CautionTape";
 import List from "../components/ProjectList";
-import BentoLayout from "../components/Projects/BentoLayout";
+import BentoLayout from "../components/BentoLayout";
+import ClickReaction from "../components/ClickReaction";
 ---
 
 <MainLayout title="Portfolio" description="Homepage">
-  <Navbar client:idle />
-  <!-- <Button client:load /> -->
-  <CautionTape />
-  <!-- <BentoLayout /> -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 m-[8%]">
-    <Intro client:idle />
-    <div class="md:pl-0 place-content-center py-20">
-      <div
-        class="mb-4 ml-1 text-2xl font-bold underline decoration-wavy\
-	  			 font-serif text-center lg:text-left"
-      >
-        Projects:
-      </div>
-      <List
-        title="b#"
-        description="cozy game for learning music theory"
-        year="IP"
-        route="\projects"
-        client:idle
-      />
-      <List
-        title="m.graph"
-        description="visualization tool to track your courses"
-        year="IP"
-        route="\projects"
-        client:idle
-      />
-      <List
-        title="print.spot"
-        description="webapp for finding campus printers"
-        year="IP"
-        route="\projects"
-        client:idle
-      />
-      <List
-        title="myvoterinfo"
-        description="app showing up-to-date personalized voting info"
-        year={2024}
-        route="\projects"
-        client:idle
-      />
-      <List
-        title="teatopia"
-        description="e-commerce website for tea lovers"
-        year={2023}
-        route="\projects"
-        client:idle
-      />
+  <ClickReaction />
+  <div
+    class="fixed top-0 left-0 right-0 w-full z-2 var(--beige) rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100"
+  >
+    <Navbar client:idle />
+    <CautionTape />
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    <!-- <Intro client:idle /> -->
+    <div>
+      <p>Lydia Chen</p>
+      <p>she/her/hers</p>
+      <p>CS @ Tufts</p>
     </div>
   </div>
-  <!-- <div class="h-[100vh] bg-slate-100">
-		<div class="flex grid grid-cols-3">
-			<Tile
-				imageURL="project1.png"
-				title="Bee Sharp"
-				subject="UX Design"
-				client:idle
-			/>
-			<Tile
-				imageURL="project1.png"
-				title="Project 2"
-				subject="UX Design"
-				client:idle
-			/>
-			<Tile
-				imageURL="project1.png"
-				title="Project 3"
-				subject="UX Design"
-				client:idle
-			/>
-		</div>
-	</div> -->
-  <!-- <MoodTracker /> -->
-  <!-- <Donut3D client:load /> -->
-  <Footer client:visible />
+  <!-- <Footer client:visible /> -->
 </MainLayout>

@@ -16,14 +16,14 @@ const Tile: React.FC<TileProps> = ({ imageURL, title, subject }) => {
         <div className='flex justify-center'>
             <div className="flex w-4/5 lg:w-2/5">
                 <div className='relative w-[800px]'>
-                    <img className="bg-slate-200 h-full \
+                    <img className="h-full \
                             transition-transform duration-300 ease-out transform \
                             hover:cursor-pointer rounded-3xl drop-shadow-lg border \
                             border-white border-4 hover:scale-110"
                         alt="Project" src={imageURL} />
                     <span
                         className='absolute bottom-0 left-0 w-full h-1/6 \
-                        rounded-3xl bg-white flex flex-col items-center justify-center \
+                        rounded-3xl flex flex-col items-center justify-center \
                         transition-all duration-300 ease-out'
                         onMouseEnter={handleHoverEnter}
                         onMouseLeave={handleHoverLeave}

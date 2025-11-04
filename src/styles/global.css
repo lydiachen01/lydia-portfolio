@@ -14,9 +14,23 @@
 
 * {
     font-family: Fragment Mono, Julius, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+body {
+    background-color: var(--beige);
 }
 
 .gradient-list {
-    background: linear-gradient(to right, rgb(0, 0, 0, 1), rgb(0, 0, 0. 0.2) );
+    background: linear-gradient(to right, rgb(0, 0, 0, 1), rgb(0, 0, 0. 0.2));
+}
+
+
+:root {
+    --dark-blue: #19142e;
+    --dark-blue-50: #19142e6c;
+    --green: #aacc00;
+    --gray: #eeeeee;
+    --beige: #FFFAEF;
+    --brown: #625944;
 }

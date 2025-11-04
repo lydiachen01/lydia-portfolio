@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className="flex pt-1">
                     <img src="ricebowl.png" className="h-6"></img>
-                    <span className="ml-2">fueled by avocado toasts + chai lattes</span>
+                    <span className="ml-2">fueled by peanut butter + string cheese</span>
                 </div>
                 <ul>
                     <li className="flex py-4">
@@ -26,7 +26,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div>Built with Astro.</div>
-                <div>Last Updated on Sept. 16, 2024</div>
+                <div>Last Updated on Oct. 3, 2025</div>
             </div>
         </footer>
     );

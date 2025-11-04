@@ -5,7 +5,7 @@ import Freebites from "./Freebites";
 import AKA from "./AKA";
 
 const tabs = [
-    { title: "myvoterinfo [2023]", contentID: 1 },
+    { title: "myvoterinfo [2024]", contentID: 1 },
     { title: "goosegoose [2025]", contentID: 2 },
     { title: "freebites [2025 - PRESENT]", contentID: 3 },
     { title: "aka. [WIP]", contentID: 4 },

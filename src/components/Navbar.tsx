@@ -35,7 +35,7 @@ const Tabs: React.FC<TabsProps> = ({ tabName, link, styles = '', newTab, isActiv
 const tabs: { [key: string]: string } = {
     "PROJECTS": "/projects",
     "ABOUT": "/about",
-    "CV": "https://drive.google.com/file/d/1bA7sGtLzLPg3tNwe4gpFBi4Cpz7uj4Mp/view?usp=sharing"
+    "CV": "https://drive.google.com/file/d/1HBjzW8DtJpnSDewopo_6uspV1kS-j6PP/view?usp=sharing"
 };
 
 const Navbar: React.FC = () => {
